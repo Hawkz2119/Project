@@ -73,3 +73,6 @@ const isChecked = true,
       isClosed = false;
 
 console.log(isChecked || isClosed);*/
+
+const numberOfFilms = +prompt ("Сколько вы уже фильмов посмотрели?", "");
+console.log(numberOfFilms);
