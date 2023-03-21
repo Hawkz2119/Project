@@ -75,13 +75,22 @@ const isChecked = true,
 console.log(isChecked || isClosed);*/
 
 const numberOfFilms = +prompt ("Сколько вы уже фильмов посмотрели?", "");
-console.log(numberOfFilms);
-
+   
 const personalMovieDB = {
 	count: numberOfFilms,
-	movies: { },
+	movies: {},
 	actors:{},
 	genres:[],
 	privat:false
 };
 
+const a = prompt ("Один из просмотренных фильмов", ""),
+	b = prompt ("На сколько оцените его?", ""),
+	c = prompt ("Один из просмотренных фильмов", ""),
+	d = prompt ("На сколько оцените его?", "");
+	
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[d] = c;
+console.log(personalMovieDB);
+ 
